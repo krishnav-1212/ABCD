@@ -24,11 +24,11 @@ const admin = require('firebase-admin');
 const { google } = require('googleapis');
 
 // ───────────────────────── configuration ─────────────────────────
-const TARGET_FOLDER_ID = process.env.DRIVE_FOLDER_ID || 'PASTE_YOUR_TARGET_FOLDER_ID_HERE';
+const TARGET_FOLDER_ID = process.env.DRIVE_FOLDER_ID || '1bLNXSsHpSDXX7ufPsl72qxkxzdDvWkDJ';
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || 'https://krishnav-2211.netlify.app')
   .split(',').map(s => s.trim().replace(/\/+$/, '')).filter(Boolean);
-const ADMIN_UIDS = (process.env.ADMIN_UIDS || '').split(',').map(s => s.trim()).filter(Boolean);
-const FIREBASE_PROJECT_ID = process.env.FIREBASE_PROJECT_ID || '';
+const ADMIN_UIDS = (process.env.ADMIN_UIDS || 'FrjEBtYnXASmec4xzsfwOtoiUXX2').split(',').map(s => s.trim()).filter(Boolean);
+const FIREBASE_PROJECT_ID = process.env.FIREBASE_PROJECT_ID || 'krishnav-2211';
 const MAX_UPLOAD_BYTES = Math.max(1, Number(process.env.MAX_UPLOAD_MB || 200)) * 1024 * 1024;
 const PORT = process.env.PORT || 3000;
 
